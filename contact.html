@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Contact & Réservations — INVICTUS Restaurant by Karim M'halla</title>
+<meta name="description" content="Contactez INVICTUS à Khezama, Sousse : adresse, téléphone +216 28 048 282, itinéraire Google Maps et réservations.">
+<meta name="theme-color" content="#050505">
+<link rel="icon" href="assets/logo/logo-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.pexels.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Unbounded:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>document.documentElement.classList.add('js');window.__rt=setTimeout(function(){document.documentElement.classList.add('ready')},4500)</script>
+</head>
+<body data-page="contact">
+<div class="curtain" aria-hidden="true"><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><img class="curtain-logo" src="assets/logo/logo-mark.svg" alt=""></div>
+<header class="hdr" id="site-header"></header>
+
+<main>
+  <section class="phero short">
+    <div class="hero-bg" data-parallax="0.2"><img src="https://images.pexels.com/photos/8412054/pexels-photo-8412054.jpeg?auto=compress&cs=tinysrgb&w=2000" alt="Terrasse illuminée le soir" fetchpriority="high"></div>
+    <div class="hero-shade"></div><div class="hero-light"></div>
+    <div class="pillars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <canvas id="gl" aria-hidden="true"></canvas>
+    <div class="container">
+      <p class="crumbs reveal"><a href="index.html">Accueil</a> &nbsp;/&nbsp; Contact</p>
+      <h1 class="h1 split">Nous <em>contacter</em></h1>
+      <p class="lead reveal" style="--d:500ms">Réservations acceptées. Sur place ou à emporter.</p>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:clamp(50px,6vw,90px)">
+    <div class="container contact-grid">
+      <div>
+        <div class="info-list reveal">
+          <div class="info" data-icon="pin" data-size="28">
+            <div><h3>Adresse</h3><p>VJ38+MC3, Khezama Zone Touristique,<br>Avenue 14 Janvier,<br>Sousse 4051, Tunisie</p>
+            <button class="copy" data-copy="VJ38+MC3, Khezama Zone Touristique, Avenue 14 Janvier, Sousse 4051, Tunisie">Copier l'adresse</button></div>
+          </div>
+          <div class="info" data-icon="phone" data-size="28">
+            <div><h3>Téléphone & réservations</h3><a class="tel" href="tel:+21628048282">+216 28 048 282</a></div>
+          </div>
+          <div class="info" data-icon="star" data-size="28">
+            <div><h3>Note Google</h3><p>4,4/5 · 182 avis</p></div>
+          </div>
+        </div>
+        <div class="btn-row reveal" style="margin-top:26px">
+          <a class="btn btn-gold" href="tel:+21628048282" data-icon="phone" data-size="18">Appeler</a>
+          <a class="btn btn-ghost" id="dir-btn" href="https://www.google.com/maps/dir/?api=1&destination=VJ38%2BMC3%20Khezama%2C%20Sousse%2C%20Tunisie" target="_blank" rel="noopener" data-icon="nav" data-size="18">Itinéraire</a>
+        </div>
+      </div>
+      <div class="map-wrap reveal" style="--d:150ms">
+        <iframe title="Carte Google Maps — INVICTUS Restaurant" src="https://www.google.com/maps?q=VJ38%2BMC3%20Khezama%2C%20Sousse%2C%20Tunisie&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="map-bar">
+          <span class="mut" style="font-size:.78rem">Khezama · Sousse</span>
+          <a class="btn btn-gold btn-sm" href="https://www.google.com/maps/dir/?api=1&destination=VJ38%2BMC3%20Khezama%2C%20Sousse%2C%20Tunisie" target="_blank" rel="noopener">Itinéraire Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0" id="reserver">
+    <div class="container">
+      <span class="kicker reveal">Réservation</span>
+      <h2 class="h2 split">Réservez <em>votre table.</em></h2>
+      <div class="grid2" style="align-items:start">
+        <p class="lead reveal">Choisissez votre date, l'heure et le nombre de convives : votre message de réservation est préparé et envoyé par SMS au restaurant. Vous pouvez aussi nous appeler directement.</p>
+        <form class="form reveal" id="resa-form" style="--d:150ms">
+          <div class="field full"><label for="f-name">Nom</label><input id="f-name" name="name" required autocomplete="name" placeholder="Votre nom"></div>
+          <div class="field"><label for="f-date">Date</label><input id="f-date" type="date" name="date" required></div>
+          <div class="field"><label for="f-time">Heure</label><input id="f-time" type="time" name="time" required value="20:00"></div>
+          <div class="field full"><label for="f-people">Personnes</label>
+            <select id="f-people" name="people"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10 et +</option></select></div>
+          <div class="full btn-row"><button class="btn btn-gold" type="submit" data-icon="arrow" data-size="18">Envoyer par SMS</button><a class="btn btn-ghost" href="tel:+21628048282">Ou appeler</a></div>
+          <p class="form-note">La réservation est confirmée par le restaurant.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="container">
+      <span class="kicker reveal">Services & ambiance</span>
+      <h2 class="h2 split">Tout pour <em>votre confort.</em></h2>
+      <div class="svc-grid reveal" data-services="svc" style="margin-top:50px"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr" id="site-footer"></footer>
+<script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Galerie — INVICTUS Restaurant by Karim M'halla</title>
+<meta name="description" content="Galerie photo d'INVICTUS : plats, intérieur, terrasse, cheminée et ambiance gastronomique.">
+<meta name="theme-color" content="#050505">
+<link rel="icon" href="assets/logo/logo-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.pexels.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Unbounded:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>document.documentElement.classList.add('js');window.__rt=setTimeout(function(){document.documentElement.classList.add('ready')},4500)</script>
+</head>
+<body data-page="gallery">
+<div class="curtain" aria-hidden="true"><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><img class="curtain-logo" src="assets/logo/logo-mark.svg" alt=""></div>
+<header class="hdr" id="site-header"></header>
+
+<main>
+  <section class="phero short">
+    <div class="hero-bg" data-parallax="0.2"><img src="https://images.pexels.com/photos/33630389/pexels-photo-33630389.jpeg?auto=compress&cs=tinysrgb&w=2000" alt="Terrasse du restaurant au coucher du soleil" fetchpriority="high"></div>
+    <div class="hero-shade"></div><div class="hero-light"></div>
+    <div class="pillars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <canvas id="gl" aria-hidden="true"></canvas>
+    <div class="container">
+      <p class="crumbs reveal"><a href="index.html">Accueil</a> &nbsp;/&nbsp; Galerie</p>
+      <h1 class="h1 split">La <em>Galerie</em></h1>
+      <p class="lead reveal" style="--d:500ms">Plats, salle, terrasse, cheminée : l'ambiance INVICTUS en images.</p>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:clamp(50px,6vw,90px)">
+    <div class="container">
+      <div class="filters" id="filters" role="group" aria-label="Filtrer la galerie"></div>
+      <div class="masonry" id="masonry"></div>
+      <p class="note">Photographies d'illustration. Remplacez-les par les photos officielles d'INVICTUS dans <code>js/gallery.js</code> (ou dans <code>/assets/images</code>).</p>
+    </div>
+  </section>
+</main>
+
+<!-- Visionneuse plein écran -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Visionneuse photo" aria-hidden="true">
+  <span class="lb-count" id="lb-count"></span>
+  <button class="lb-btn lb-close" aria-label="Fermer"></button>
+  <button class="lb-btn lb-prev" aria-label="Photo précédente"></button>
+  <button class="lb-btn lb-next" aria-label="Photo suivante"></button>
+  <div class="lb-stage"><img id="lb-img" src="" alt=""></div>
+  <div class="lb-cap"><small id="lb-cat"></small><b id="lb-title"></b></div>
+</div>
+
+<footer class="ftr" id="site-footer"></footer>
+<script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>

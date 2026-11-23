@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>La Carte — INVICTUS Restaurant by Karim M'halla</title>
+<meta name="description" content="La carte digitale d'INVICTUS : entrées & antipasti, pâtes, risottos, viandes, poissons, brunch, desserts et boissons.">
+<meta name="theme-color" content="#050505">
+<link rel="icon" href="assets/logo/logo-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.pexels.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&family=Unbounded:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>document.documentElement.classList.add('js');window.__rt=setTimeout(function(){document.documentElement.classList.add('ready')},4500)</script>
+</head>
+<body data-page="menu">
+<div class="curtain" aria-hidden="true"><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i><img class="curtain-logo" src="assets/logo/logo-mark.svg" alt=""></div>
+<header class="hdr" id="site-header"></header>
+
+<main>
+  <section class="menu-hero">
+    <div class="container">
+      <span class="kicker reveal">Carte digitale</span>
+      <h1 class="h1 split">La <em>Carte</em></h1>
+      <p class="menu-sub reveal" style="--d:300ms">Cuisine méditerranéenne &amp; internationale · Prix en TND</p>
+      <div class="menu-tools reveal" style="--d:400ms">
+        <label class="search"><span class="sr">Rechercher un plat</span><input id="menu-search" type="search" placeholder="Rechercher un plat…" autocomplete="off"></label>
+        <div class="tag-filters" id="tag-filters"></div>
+      </div>
+      <p class="menu-note">Photographies à titre illustratif. Les prix et descriptions seront affichés dès leur validation par le restaurant.</p>
+    </div>
+  </section>
+
+  <nav class="cats" aria-label="Catégories de la carte"><div class="cats-in" id="cats-in"></div></nav>
+
+  <div class="container">
+    <div id="menu-root"></div>
+    <p class="no-res" id="no-res">Aucun plat ne correspond à votre recherche.</p>
+    <div class="menu-end">
+      <img src="assets/logo/logo-mark.svg" alt="" width="39" height="90">
+      <p class="kicker" style="margin-bottom:20px">INVICTUS by Karim M'halla</p>
+      <p class="mut">Réservations acceptées · Sur place &amp; à emporter</p>
+      <div class="btn-row" style="justify-content:center;margin-top:28px">
+        <a class="btn btn-gold" href="tel:+21628048282" data-icon="phone" data-size="18">Appeler le restaurant</a>
+        <a class="btn btn-ghost" href="contact.html">Itinéraire &amp; contact</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Fiche plat -->
+<div class="sheet" id="sheet" aria-hidden="false" role="dialog" aria-modal="true" aria-label="Détail du plat">
+  <div class="sheet-card">
+    <button class="sheet-close" aria-label="Fermer"></button>
+    <div class="sheet-img"><img id="sheet-img" src="" alt=""></div>
+    <div class="sheet-body">
+      <small id="sheet-cat"></small>
+      <h3 id="sheet-name"></h3>
+      <p id="sheet-desc"></p>
+      <div class="sheet-price"><span class="mut" style="font-size:.68rem;letter-spacing:.24em;text-transform:uppercase">Prix</span><span class="price" id="sheet-price"></span></div>
+    </div>
+  </div>
+</div>
+
+<footer class="ftr" id="site-footer"></footer>
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
