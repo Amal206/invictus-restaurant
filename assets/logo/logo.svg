@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <!-- INVICTUS RESTAURANT – logo complet (reconstitution vectorielle). Remplacez par votre fichier officiel. -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EBD59B"/>
+      <stop offset="1" stop-color="#B38F54"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="#000"/>
+  <path fill="url(#g)" d="M540 121L572 146L540 171L508 146Z"/>
+  <path fill="url(#g)" d="M540 175L572 197L540 220L508 197Z"/>
+  <path fill="#fff" d="M452 207H505L540 237L575 207H628V462Q628 494 592 517V263L540 306L488 263V517Q452 494 452 462Z"/>
+  <path fill="#fff" d="M527 322L556 346V398L536 398L556 420V546L540 560L524 546V430L488 398L524 368Z"/>
+  <text x="540" y="688" text-anchor="middle" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="112" fill="#fff" textLength="676" lengthAdjust="spacingAndGlyphs">INVICTUS</text>
+  <rect x="0" y="837" width="1080" height="6" fill="#C8A96E"/>
+  <text x="540" y="958" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" fill="#fff" letter-spacing="26">RESTAURANT</text>
+</svg>
